@@ -1,0 +1,158 @@
+.wrapper{
+    position: relative;
+    min-height: 100%;
+    overflow: hidden;
+}
+[class *="__container"]{
+    max-width: 1000px;
+    /* для теста */
+    height: 1800px;
+    margin: 0 auto;
+}
+.header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 65px;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.5);  
+}
+.header__menu {
+    font-family: lato;
+    font-weight: 700;
+}
+.menu__item {
+    position: relative;
+    display: inline-block;
+}
+.menu__item:not(:last-child) {
+    margin-right: 10px;
+}
+.menu__item:hover .sub-menu {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+.menu__link {
+    color: white;
+    font-size: 24px;
+    display: inline-block;
+    padding: 20px 10px 10px;
+}
+.sub-menu {
+    padding: 15px; 
+    position: absolute;
+    min-width: 120px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: all 0.4s ease 0s;
+    background-color: rgba(0, 0, 0, 0.5);  
+}
+.sub-menu__item:not(:last-child){
+    margin-bottom: 10px;
+}
+.sub-menu__link {
+    color: white;
+}
+.car {
+    font-family: lato;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 40px;
+}
+.car__title {
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+h1 {
+    text-align: center;
+}
+.car__block {
+    position: relative;
+    max-width: 960px;
+    margin: 0 auto;
+    margin-bottom: 50px;    
+}
+.car__parth-1,
+.car__parth-2,
+.car__parth-3,
+.car__parth-4,
+.car__parth-5,
+.car__parth-6,
+.car__parth-7,
+.car__parth-8,
+.car__parth-9,
+.car__parth-10,
+.car__parth-11 {
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 320px;
+    height: 180px;
+}
+.car__parth-1 {
+    background-image: url("../img/car-1.jpg");
+    border-radius: 25px 0px 0px 0px;
+    top: 0px;
+    left: 0px;        
+}
+.car__parth-2 {
+    background-image: url("../img/car-2.jpg");
+    top: 0px;
+    left: 320px;    
+}
+.car__parth-3 {
+    background-image: url("../img/car-3.jpg");
+    border-radius: 0px 25px 0px 0px;
+    top: 0px;
+    left: 640px; 
+}
+.car__parth-4 { 
+    background-image: url("../img/car-4.jpg");
+    top: 180px;
+    left: 0px; 
+}
+.car__parth-5 {
+    background-image: url("../img/car-5.jpg"); 
+    top: 180px;
+    left: 320px; 
+}
+.car__parth-6 {  
+    background-image: url("../img/car-6.jpg");
+    top: 180px;
+    left: 640px; 
+}
+.car__parth-7 {
+    background-image: url("../img/car-7.jpg");
+    border-radius: 0px 0px 0px 25px; 
+    top:360px;
+    left: 0px; 
+}
+.car__parth-8 {
+    background-image: url("../img/car-8.jpg");
+    top: 360px;
+    left: 320px; 
+}
+.car__parth-9 {
+    background-image: url("../img/car-9.jpg");
+    border-radius: 0px 0px 25px 0px;
+    top: 360px;
+    left: 640px; 
+}
+.car__parth-10 {
+    background-image: url("../img/motor.png"); 
+    width: 200px;
+    height: 200px;
+    top: 50px;
+    left: 25px;
+}
+.car__parth-11 {
+    background-image: url("../img/wheel.png"); 
+    width: 200px;
+    height: 200px;
+    top: 50px;
+    right: 25px;
+}
